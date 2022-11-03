@@ -1,0 +1,121 @@
+/* mainvisual */ 
+
+.c-mainvisual {
+    margin-bottom: 80px;
+    margin-top: 70px;
+    text-align: center;
+
+    &__item {
+        max-width: 420px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    &__link {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        &.--hiru {
+            left: 0;
+        }
+        &.--yoru {
+            right: 0;
+        }
+    }
+    &__scroll {
+        margin-top: 76px;
+        span{
+            position: relative;
+            font-size: ( 18px / $font-size) * 1rem;
+            font-weight: bold;
+            &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 30px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: $black;
+                    animation:
+                        circlemove 1.6s ease-in-out infinite,
+                        cirlemovehide 1.6s ease-out infinite;
+                }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -45px;
+                left: 34px;
+                width: 2px;
+                height: 40px;
+                background: $black;
+            }
+        }
+    }
+    &__telsp{
+        display: none;
+        background: #000;
+        font-size: ( 18px / $font-size) * 1rem;
+        font-weight: bold;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 72px;
+        padding: 12px 0;
+        a{
+            color: #fff;
+        }
+        img{
+            width: 23px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+@keyframes circlemove {
+    0% {
+        bottom: -10px;
+    }
+
+    100% {
+        bottom: -50px;
+    }
+}
+
+@keyframes cirlemovehide {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@include media-breakpoint-sp {
+    .c-mainvisual {
+        margin-bottom: 0;
+        &__telsp{
+            display: block;
+        }
+        
+        &__item {
+            max-width: 280px;
+            width: 90%;
+        }
+        &__scroll {
+            margin-top: 56px;
+        }
+    }
+}

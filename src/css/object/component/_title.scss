@@ -1,0 +1,52 @@
+/* title */ 
+
+.c-heading1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    &.--white{
+        span{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    img{
+        height: 56px;
+    }
+    span {
+        font-size: ( 36px / $font-size) * 1rem;
+        color: #fff;
+        background-color: #000;
+        line-height: 1.4;
+        padding: 3px 20px;
+        min-height: 54px;
+    }
+}
+.c-heading2{
+    font-size: ( 28px / $font-size) * 1rem;
+    font-weight: bold;
+}
+.c-heading3{
+    font-size: ( 24px / $font-size) * 1rem;
+    font-weight: bold;
+}
+.c-heading4{
+    font-size: ( 32px / $font-size) * 1rem;
+    font-weight: bold;
+}
+.c-heading5{
+    font-size: ( 31px / $font-size) * 1rem;
+    font-weight: bold;
+}
+@include media-breakpoint-sp{
+    .c-heading1{
+        span {
+            font-size: ( 34px / $font-size) * 1rem;
+            padding: 3px 5px;
+        }
+        align-items: inherit;
+    }
+}

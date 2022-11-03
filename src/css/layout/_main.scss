@@ -1,0 +1,39 @@
+.l-inner {
+	margin: 0 auto;
+	padding: 0 $pd-x-pc;
+	width: $content-width;
+	max-width: 100%;
+	height: inherit;
+	// 1920
+	&.--wide1920 {
+		width:  $content-width--wide-1920;
+	}
+	// 1778
+	&.--wide1778 {
+		width:  $content-width--wide-1778;
+	}
+	// 1400px
+	&.--wide {
+		width:  $content-width--wide;
+	}
+	// 1000px 
+	&.--narrow {
+		width:  $content-width--narrow;
+	}
+	&.--sevent {
+		width:  $content-width--narrow-700;
+	}
+
+}
+
+.l-content {
+	padding-top: 80px;
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+	.l-inner {
+		padding: 0 $pd-x-sp;
+	}
+}

@@ -1,0 +1,31 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'news',
+		id: 'index',
+		title: 'お知らせ',
+		titlehtml: '',
+		description: 'お知らせのディスクリプションです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-newsingle">
+						<div class="l-inner">
+							<div class="p-newsingle__content">
+								<h2 class="p-newsingle__contentTitle"><img src="<%= getRelativePath('/images/index/osirase.png'); %>" alt="お知らせ"></h2>
+								<h3 class="c-heading5">タイトル〇タイトル〇タイトル〇タイトル</h3>
+								<span class="c-text3 --bold">2022.00.00</span>
+								<p class="c-text3 --bold">
+									ひるとよるのサイトがリリースされました。<br>
+									テキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
+									トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
+									ストテキストテキストテキストテキスト
+								</p>
+								<div class="p-newsingle__contentCenter">
+									<a href="<%= getRelativePath('/'); %>">
+										<span class="c-btnTop"><img src="<%= getRelativePath('/images/common/icon_arrow01.png'); %>" alt="TOPへ戻る">TOPへ戻る</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

@@ -1,0 +1,33 @@
+.p-newsingle{
+    margin-top: 102px;
+    .l-inner{
+        width: 96%;
+        max-width: 1006px;
+        margin: 0 auto;
+        font-family: $font-family-gothic;
+        h3,h2{
+            text-align: center;
+        }
+        p.c-text3{
+            border-top: 1px solid #000;
+            margin-top: 23px;
+            padding-top: 3px;
+            line-height: 2.3;
+        }
+    }
+    &__content{
+        &Title{
+            margin-bottom: 155px;
+        }
+        span{
+            margin-top: 44px;
+            display: inline-block;
+        }
+        &Center{
+            text-align: center;
+            margin-top: 28px;
+            margin-bottom: 100px;
+        }
+    }
+  
+}

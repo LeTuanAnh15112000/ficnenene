@@ -1,0 +1,14 @@
+/* display */ 
+
+@include media-breakpoint-pc-tab {
+	.u-onlySp {
+		display: none !important;
+	}
+	.u-onlyPc{
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-sp {
+   
+}
